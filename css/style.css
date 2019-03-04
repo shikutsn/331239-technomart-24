@@ -1,0 +1,58 @@
+/* ================================= хедер ================================= */
+/* ========================================================================= */
+/* ============================== преимущества ============================= */
+.promo-features-slider {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-color: green;
+}
+
+.promo-features-slider-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 620px;
+}
+
+.promo-features-slider-container::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  left: 25px;
+  top: 114px;
+  background-image: url("../img/features-slider-icon-left.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.promo-features-slider-container::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  right: 20px;
+  top: 114px;
+  background-image: url("../img/features-slider-icon-right.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.promo-features-slider-item {
+  display: none;
+}
+
+.slider-item-shown {
+  display: block;
+}
+
+.slider-item-image-wrapper {
+  /*position: relative;*/
+  /*width: 620px;*/
+}
+
+
+/* ========================================================================= */
+/* ========================================================================= */
