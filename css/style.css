@@ -1,4 +1,184 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* ================================= хедер ================================= */
+.main-header {
+  /*background-color: #f4f7f9;*/
+  /*min-height: 320px;*/
+}
+
+.header-logo-order-wrapper {
+  background-color: #293449;
+  display: flex;
+  /*min-height: 50px;*/
+}
+
+.header-user-main-menu-wrapper {
+  background-color: #f4f7f9;
+}
+
+.header-logo-order-container {
+  display: flex;
+}
+
+.header-logo-container {
+  width: 220px;
+  height: 42px;
+  background-color: #ee3643;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.header-logo-container::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #b52933;
+  bottom: -5px;
+  left: 0;
+  position: absolute;
+}
+
+.header-logo {
+  margin: 13px auto 0 auto;
+  display: block;
+}
+
+.header-logo-container:hover,
+.header-logo-container:focus {
+  background-color: #ca2c37;
+}
+
+.header-logo-container:active {
+  background-color: #ba2732;
+}
+
+.header-logo-container:hover::after,
+.header-logo-container:focus::after {
+  background-color: #9a212a;
+}
+
+.header-logo-container:active::after {
+  background-color: #8e1e26;
+}
+
+.header-search-form {
+  width: 270px;
+  padding: 10px 0 0 17px;
+  margin: 0px 0 0 0;
+  position: relative;
+  background-color: #293449;
+}
+
+.header-search-form:hover {
+  background-color: #212a3a;
+}
+
+.header-search-form:active {
+  background-color: #293449;
+}
+
+.header-search-form:focus-within {
+  background-color: #ffffff;
+}
+
+.header-search-form:hover path {
+  fill: #ffffff;
+}
+
+.header-search-form:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.header-search-form:focus-within path {
+  fill: #ee3643;
+}
+
+.header-search-field:focus {
+  color: #000000;
+}
+
+.header-search-field {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  margin: 1px 0 0 10px;
+  padding: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-search-field::placeholder {
+  color: #ffffff;
+}
+
+.header-button-search {
+  display: none;
+}
+
+.header-search-icon {
+  /*margin: 2px 0 0 17px;*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-search-icon path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.header-search-form::before {
+  /* иконка лупы */
+  /*content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 2px;
+  left: 17px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;*/
+
+}
 /* ========================================================================= */
 /* ============================== преимущества ============================= */
 .promo-features-slider {
