@@ -49,6 +49,7 @@ a {
 
 .header-user-main-menu-wrapper {
   background-color: #f4f7f9;
+  min-width: 960px;
 }
 
 .header-logo-order-container {
@@ -231,6 +232,145 @@ a {
 .header-order-button:active {
   background-color: #518534;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.header-contacts-user-menu-container {
+  padding: 46px 0 0 0;
+  display: flex;
+}
+
+.header-shop-description {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+  width: 200px;
+  flex-shrink: 0;
+  margin: 3px 0 0 52px;
+}
+
+.header-phone-address {
+  flex-shrink: 0;
+  width: 270px;
+  margin: 0 0 0 68px;
+}
+
+.header-phone {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  margin: 0;
+  padding: 9px 49px 9px 71px;
+  color: #ee3643;
+  width: 270px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header-phone::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 10px;
+  left: 12px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.header-address {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  margin: 4px 0 0 0;
+  padding: 0;
+}
+
+.header-login-button {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  width: 121px;
+  background-color: #ffffff;
+  height: 45px;
+  box-sizing: border-box;
+  padding: 12px 0 0 46px;
+  margin: 0 0 0 70px;
+  position: relative;
+}
+
+.header-login-button::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 13px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /* иконка с черной (#000000) заливкой. В покое и нажатии заливка #c5c5c5
+   (0xc5 = 197). 197 / 255 = 0.77, значит прозрачность 1 - 0.77 = 0.23
+   все это для того, чтоб не связываться с инлайном свг и заменой филла
+   (а это - то, что предполагают cделать по макету) */
+  opacity: 0.23;
+}
+
+.header-register-button {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  width: 150px;
+  background-color: #ffffff;
+  height: 45px;
+  box-sizing: border-box;
+  margin: 0 0 0 10px;
+  padding: 12px 0 0 23px;
+}
+
+.header-login-button:hover,
+.header-login-button:focus,
+.header-register-button:hover,
+.header-register-button:focus {
+  color: #ee3643;
+}
+
+.header-login-button:hover::before,
+.header-login-button:focus::before {
+  opacity: 1;
+}
+
+.header-login-button:active::before {
+  opacity: 0.23;
+}
+
+.header-login-button:active,
+.header-register-button:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.header-main-menu {
+  list-style: none;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  min-height: 60px;
+}
+
+.header-main-menu-item a {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 0 10px;
+  line-height: 60px;
+  padding: 0 31px;
 }
 
 
